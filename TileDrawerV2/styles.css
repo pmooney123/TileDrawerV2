@@ -1,0 +1,60 @@
+#bag {
+    height: 360px;
+    width: 100px;
+    margin: 5px;
+    margin-top: 0;
+    padding: 5px;
+    border: 2px solid black;
+}
+#discard {
+    height: 360px;
+    width: 100px;
+    margin: 5px;
+    margin-top: 0;
+    padding: 5px;
+    border: 2px solid black;
+}
+#drawn {
+    height: 360px;
+    width: 100px;
+    margin: 5px;
+    margin-top: 0;
+    padding: 5px;
+    border: 2px solid black;
+}
+#extra {
+    height: 360px;
+    width: 100px;
+    margin: 5px;
+    margin-top: 0;
+    padding: 5px;
+    border: 2px solid black;
+}
+#hand {
+    height: 150px;
+    width: 150px;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid black;
+}
+body {
+    background-color: dimgrey;
+}
+#div1 {
+    border: 2px solid black;
+    width: 550px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.button {
+    height: 50px;
+    width: 150px;
+    background-color: grey;
+    margin: 5px;
+    border: 2px solid black;
+}
+.button:active {
+    background-color: black;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Patrick's Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src = "vars.js"></script>
+    <script defer src = "script.js"></script>
+</head>
+<body>
+<button type="button" class="button" onclick="drawNewTile()">Draw New Tile!</button>
+<button type="button" class="button" onclick="discardTile()">Discard!</button>
+<button type="button" class="button" onclick="enterMordor()">Enter Mordor!</button>
+<button type="button" class="button" onclick="returnTile()">Return!</button>
+<button type="button" class="button" onclick="getSecondTile()">Draw a Different Tile</button>
+<button type="button" class="button" onclick="resetBag()"><s>Reset Bag</s></button>
+<br>
+<b>Hand</b>
+<div id="hand" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+
+</div>
+<div id="div1">
+    <b>Bag</b>
+    <b>Discard</b>
+    <b>Drawn</b>
+    <b>Extra</b>
+    <div id="bag" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+        <img src="src/0r.png" draggable="true" ondragstart="drag(event)" id="0ra" width="40" height="40" alt="0r.png">
+        <img src="src/0r.png" draggable="true" ondragstart="drag(event)" id="0rb" width="40" height="40" alt="0r.png">
+        <img src="src/1.png" draggable="true" ondragstart="drag(event)" id="1a" width="40" height="40" alt="1.png">
+        <img src="src/1.png" draggable="true" ondragstart="drag(event)" id="1b" width="40" height="40" alt="1.png">
+        <img src="src/1r.png" draggable="true" ondragstart="drag(event)" id="1ra" width="40" height="40" alt="1r.png">
+        <img src="src/1r.png" draggable="true" ondragstart="drag(event)" id="1rb" width="40" height="40" alt="1r.png">
+        <img src="src/2.png" draggable="true" ondragstart="drag(event)" id="2a" width="40" height="40" alt="2.png">
+        <img src="src/2.png" draggable="true" ondragstart="drag(event)" id="2b" width="40" height="40" alt="2.png">
+        <img src="src/2r.png" draggable="true" ondragstart="drag(event)" id="2r" width="40" height="40" alt="2r.png">
+        <img src="src/3.png" draggable="true" ondragstart="drag(event)" id="3a" width="40" height="40" alt="3.png">
+        <img src="src/3.png" draggable="true" ondragstart="drag(event)" id="3b" width="40" height="40" alt="3.png">
+        <img src="src/3.png" draggable="true" ondragstart="drag(event)" id="3c" width="40" height="40" alt="3.png">
+        <img src="src/eyer.png" draggable="true" ondragstart="drag(event)" id="eyea" width="40" height="40" alt="eye.png">
+        <img src="src/eyer.png" draggable="true" ondragstart="drag(event)" id="eyeb" width="40" height="40" alt="eye.png">
+        <img src="src/eyer.png" draggable="true" ondragstart="drag(event)" id="eyec" width="40" height="40" alt="eye.png">
+        <img src="src/eyer.png" draggable="true" ondragstart="drag(event)" id="eyed" width="40" height="40" alt="eye.png">
+    </div>
+
+    <div id="discard" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+
+    </div>
+
+
+    <div id="drawn" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+
+    </div>
+
+    <div id="extra" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+        <img src="src/b0.png" draggable="true" ondragstart="drag(event)" id="blue0c" width="40" height="40" alt="b0.png">
+        <img src="src/b0.png" draggable="true" ondragstart="drag(event)" id="blue0r" width="40" height="40" alt="b0.png">
+        <img src="src/b-1.png" draggable="true" ondragstart="drag(event)" id="blue1" width="40" height="40" alt="b-1.png">
+        <img src="src/b-2.png" draggable="true" ondragstart="drag(event)" id="blue2" width="40" height="40" alt="b-2.png">
+
+        <img src="src/reyers.png" draggable="true" ondragstart="drag(event)" id="redeyers" width="40" height="40" alt="reyers.png">
+        <img src="src/r3s.png" draggable="true" ondragstart="drag(event)" id="red3s" width="40" height="40" alt="r3s.png">
+        <img src="src/rds.png" draggable="true" ondragstart="drag(event)" id="redds" width="40" height="40" alt="rds.png">
+        <img src="src/r1rs.png" draggable="true" ondragstart="drag(event)" id="red1rs" width="40" height="40" alt="r1rs.png">
+
+        <img src="src/s.png" draggable="true" ondragstart="drag(event)" id="smeagol1" width="40" height="40" alt="s.png">
+        <img src="src/s.png" draggable="true" ondragstart="drag(event)" id="smeagol2" width="40" height="40" alt="s.png">
+        <img src="src/s.png" draggable="true" ondragstart="drag(event)" id="smeagol3" width="40" height="40" alt="s.png">
+        <img src="src/s.png" draggable="true" ondragstart="drag(event)" id="smeagol4" width="40" height="40" alt="s.png">
+
+    </div>
+</div>
+</body>
+</html>
